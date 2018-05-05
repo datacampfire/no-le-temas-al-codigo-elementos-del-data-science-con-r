@@ -1,0 +1,26 @@
+---
+title: false
+author: false
+output:
+  revealjs::revealjs_presentation:
+    lib_dir: libs
+    self_contained: false
+    reveal_plugins: ["zoom"]
+    mathjax: null
+    transition: fade
+    css: ["css/styles.css"]
+    incremental: true
+    center: false
+    # center: true
+    theme: simple
+    fig_width: 6
+    fig_height: 3.5
+    reveal_options:
+      slideNumber: true
+      controls: false
+      mouseWheel: false
+editor_options: 
+  chunk_output_type: console
+---
+
+# <span style="font-family: 'Creepster'; color: white; font-size: 1.5em">No le temas al código { .center data-background="#000000"}
