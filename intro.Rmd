@@ -23,4 +23,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-# <span style="font-family: 'Creepster'; color: white; font-size: 1.5em">No le temas al código { .center data-background="#000000"}
+# <span style="font-family: 'Creepster'; color: white; font-size: 1.5em"></span> { .center data-background="#000000"}
+
+# <span style="font-family: 'Creepster'; color: white; font-size: 1.5em">No le temas<br>
+<span class="fragment" style="color: red">al código</span></span> { .center data-background="#000000"}
