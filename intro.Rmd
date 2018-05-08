@@ -23,7 +23,26 @@ editor_options:
   chunk_output_type: console
 ---
 
-# <span style="font-family: 'Creepster'; color: white; font-size: 1.5em"></span> { .center data-background="#000000"}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 
-# <span style="font-family: 'Creepster'; color: white; font-size: 1.5em">No le temas<br>
-<span class="fragment" style="color: red">al código</span></span> { .center data-background="#000000"}
+# <img class = "imgnone" src="http://dev-data-campfire.pantheonsite.io/wp-content/uploads/2018/03/Assets/Data-Campfire-Logo-white.png"/> & Joshua Kunst <br>presenta { .center data-background="#AFAFAF" data-transition-speed="slow" data-transition="fade-in fade-out" .white}
+ 
+# <span style="font-family: 'Creepster'; font-size: 1.5em">No le temas<br>
+<span class="fragment" style="color: red">al código</span></span><br><span class="fragment">Elementos del Data Science con R</span> { .white data-transition-speed="slow" data-transition="fade-in fade-out" .center data-background="#000000"}
+
+# ¿Quién soy? { .center .white data-background="#4E5ED0" }
+
+## ¿Quién creo ser?
+
+- Persona (?!)
+- Estadistico, _data lover_
+- Escribo <i class="fas fa-code"></i>
+
+# <img class = "imgnone" src="https://www.r-project.org/logo/Rlogo.png"/> { .center data-background="#FAFAFA" }
+
+## Mi <i class="fab fa-r-project" style="color: #2569BD"></i>elación con R
+
+
+- Cofundador del meetup useRchile (2013!)
+- De _cauro_ chico me lo enselaron
+- Uso R<span class="fragment">, respiro R</span><span class="fragment">, ~~como~~ vivo R</span>
