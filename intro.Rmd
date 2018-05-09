@@ -47,6 +47,7 @@ editor_options:
 - Vienen de distintas partes
 - Se complejizan
 - Hay que obtener __conocimiento__ de ellos
+- Se toman __decisiones__
 
 ## Debemos Prepararnos { .left .white data-background="imgs/rocky.gif" }
 
@@ -54,15 +55,22 @@ editor_options:
 
 ## Todos comenzamos<br>desde cierto punto { .left .center .white data-background="imgs/karatekid.gif" }
 
-## Los Elementos
+## Elementos
 
 ![elementos](imgs/r4ds_data-science.png)
 
-asda
+## Import & Tidy { .left .white data-background="imgs/import.jpg" }
 
-## AED
+--- 
 
-Some interesting text
+Debemos tener la capacidad
+
+- Integrar datos distintas fuentes
+- Limpiarlos ,estandarizarlos
+- Organizarlos, ordenarlos
+
+## 
+
 
 # ¿Por qué? <br> Elementos del Data Science<br><span class="emp">en R</span> { .left .center .white data-background="#2569BD" }
 
