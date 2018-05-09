@@ -5,7 +5,7 @@ library(hrbrthemes)
 
 theme_set(
   theme_ipsum(
-    base_family = "Open Sans",
+    base_family = "Roboto Condensed",
     plot_title_face = "plain",
     plot_title_size = "plain",
     plot_margin = margin(5, 5, 5, 5)) +

@@ -65,14 +65,14 @@ products <- products %>%
     price = price + sample(1:99/100, size = n(), replace = TRUE)
   )
 
-# writexl::write_xlsx(
-#   list(
-#     transactions = transactions, 
-#     transactions_date = transactions_date,
-#     products = products
-#   ),
-#   "~/transactions.xlsx"
-# )
+writexl::write_xlsx(
+  list(
+    transactions = transactions,
+    transactions_date = transactions_date,
+    products = products
+  ),
+  "~/transactions.xlsx"
+)
 
 # start -------------------------------------------------------------------
 # products <- readxl::read_excel("~/transactions.xlsx", sheet = "products")
