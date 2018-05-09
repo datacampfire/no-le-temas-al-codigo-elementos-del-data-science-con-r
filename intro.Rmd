@@ -23,7 +23,14 @@ output:
 editor_options: 
   chunk_output_type: console
 ---
+
+
 # <img class = "imgnone" src="http://dev-data-campfire.pantheonsite.io/wp-content/uploads/2018/03/Assets/Data-Campfire-Logo-white.png"/> & Joshua Kunst <br>presenta { .center data-background="#AFAFAF" data-transition-speed="slow" data-transition="fade-in fade-out" .white}
+
+
+```{r, include = FALSE}
+source("R/setup.R")
+```
  
 # <span style="font-family: 'Creepster'; font-size: 1.5em">No le temas<br>
 <span class="fragment" style="color: red">al código</span></span><br><span style= "font-family: 'Amatic SC', cursive;" class="fragment">Elementos del Data Science con R</span> { .white data-transition-speed="slow" data-transition="fade-in fade-out" .center data-background="#4D0000"}
@@ -36,6 +43,8 @@ editor_options:
 - Escribo código <span class="fragment">para comer</span><span class="fragment">. Y como para escribir código</span>
 - Cofundador del meetup use<b style="color:#2569BD">R</b>chile<span class="fragment">. Uso R</span><span class="fragment">, respiro R</span><span class="fragment">, ~~como~~ vivo R</span>
 - Hoy quiero ser vuestro motivador<i class="fa fa-exclamation" style="color: darkgreen"></i><i class="fa fa-exclamation" style="color: darkgreen"></i>
+
+## <b></b> { .left data-background="imgs/yay.gif" }
 
 # ¿Por qué? <br> Elementos del <span class="emp">Data</span> Science<br>en R { .left .center .white data-background="#e51c23" }
 
@@ -69,8 +78,92 @@ Debemos tener la capacidad
 - Limpiarlos ,estandarizarlos
 - Organizarlos, ordenarlos
 
-## 
+## Analisis Exploratios de Datos { .white data-background="imgs/net.png" }
 
+--- 
+
+Tenemos que tener la naturalidad en
+
+- Transformar los datos de acuerdo a nuestras preguntas
+- __Visualizarlos__<span class="fragment">. Visualización no es solo __comunicar__, 
+es parte clave en el proceso de aprendizaje</span>
+- Estadística Descriptiva
+- Modelar<span class="fragment">. Machine learning. En un próximo paso</span>
+
+## Comunicar { .left data-background="imgs/data-visualization-tools-concept.png" }
+
+--- 
+
+Debemos ser claros y precisos
+
+- Escoger la visualización que rescate de mejor manera nuestro mensaje
+- __Sinstenitar__. No sobre saturar un gráfico o un mensaje
+
+## Ejercicio - ¿Existe el mejor gráfico?
+
+```{r}
+data1 <- read_delim("data/showmethenumbers.txt", delim = "\t") %>% 
+  mutate(region = factor(region, levels = c("sur", "norte", "este", "oeste")))
+titulo <- "La región del sur exhibe el mayor crecimiento"
+data1 %>% 
+  spread(cuarto, valor) %>% 
+  arrange(region) %>% 
+  knitr::kable()
+```
+
+Cual de las siguientes formas funciona mejor con el títutlo:
+
+<span class="fragment">
+__La región del sur exhibe el mayor crecimiento__
+<br>
+<small>
+Adapatado del tweet de [Lisa Charlotte Rost](https://twitter.com/lisacrost/status/948233069110222848)
+que a su vez está viene del ejemplo del libro "Show me the numbers" de Stephen Few
+</small>
+</span>
+
+----
+
+```{r}
+p1 <- ggplot(data1) +
+  geom_col(aes(cuarto, valor, group = region, fill = region),
+           color = "gray80", position = "dodge") +
+  scale_fill_viridis(discrete = TRUE, end = 0.80)
+p1 + labs(title = titulo)
+```
+
+----
+
+```{r}
+p2 <- ggplot(data1) +
+  geom_col(aes(region, valor, group = cuarto, fill = region),
+           color = "gray80", position = "dodge") +
+  scale_fill_viridis(discrete = TRUE, end = 0.80)
+p2 + labs(title = titulo)
+```
+
+----
+
+```{r}
+p3 <- data1 %>% 
+  mutate(ind = as.numeric(region == "sur")) %>%
+  ggplot() +
+  geom_line(aes(cuarto, valor, group = region, alpha = ind, color = region), size = 2) +
+  scale_y_continuous(limits = c(0, NA)) + 
+  scale_alpha(range = c(0.5, 1), guide = FALSE) +
+  scale_color_viridis(discrete = TRUE, end = 0.80) 
+p3 + labs(title = titulo)
+```
+
+## ¿Opiniones?
+
+```{r, fig.width=12, fig.height=4}
+gridExtra::grid.arrange(
+  p1 + theme_null(),
+  p2 + theme_null(),
+  p3 + theme_null() + scale_y_continuous(limits = c(NA, NA)),
+  nrow = 1)
+```
 
 # ¿Por qué? <br> Elementos del Data Science<br><span class="emp">en R</span> { .left .center .white data-background="#2569BD" }
 
@@ -82,9 +175,13 @@ Debemos tener la capacidad
 - Fácil de automatizar, y organizar
 - Reproductibilidad. Ayuda a detectar errores
 - Gratis, codigo abierto
-- R. Tiene una privilegiada comunidad orientada a la enseñanza integración (Rladies)
+- R. Tiene una amistosa/cálida comunidad orientada a la enseñanza e integración. 
+Rladies por ejemplo
 - R. Fuerte en visualización
 
 # A mover<br>esos dedos{ .right .center .white data-background="imgs/hacker.gif" }
 
+## Pero antes, jerga
+
+![jerga](imgs/tidy-1.png)
 
