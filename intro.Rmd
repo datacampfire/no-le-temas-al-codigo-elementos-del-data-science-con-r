@@ -1,5 +1,6 @@
 ---
 title: false
+pagetitle: 'Elementos del Data Science con R'
 author: false
 output:
   revealjs::revealjs_presentation:
@@ -16,33 +17,66 @@ output:
     fig_width: 6
     fig_height: 3.5
     reveal_options:
-      slideNumber: true
+      slideNumber: false
       controls: false
       mouseWheel: false
 editor_options: 
   chunk_output_type: console
 ---
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-
 # <img class = "imgnone" src="http://dev-data-campfire.pantheonsite.io/wp-content/uploads/2018/03/Assets/Data-Campfire-Logo-white.png"/> & Joshua Kunst <br>presenta { .center data-background="#AFAFAF" data-transition-speed="slow" data-transition="fade-in fade-out" .white}
  
 # <span style="font-family: 'Creepster'; font-size: 1.5em">No le temas<br>
-<span class="fragment" style="color: red">al código</span></span><br><span class="fragment">Elementos del Data Science con R</span> { .white data-transition-speed="slow" data-transition="fade-in fade-out" .center data-background="#000000"}
+<span class="fragment" style="color: red">al código</span></span><br><span style= "font-family: 'Amatic SC', cursive;" class="fragment">Elementos del Data Science con R</span> { .white data-transition-speed="slow" data-transition="fade-in fade-out" .center data-background="#4D0000"}
 
-# ¿Quién soy? { .center .white data-background="#4E5ED0" }
+# ¡Holi! { .left data-background="imgs/hello.gif" }
 
-## ¿Quién creo ser?
+## Me presento
 
-- Persona (?!)
-- Estadistico, _data lover_
-- Escribo <i class="fas fa-code"></i>
+- Estadístico<span class="fragment">, data <i class="fa fa-heart" style="color: red"></i></span>
+- Escribo código <span class="fragment">para comer</span><span class="fragment">. Y como para escribir código</span>
+- Cofundador del meetup use<b style="color:#2569BD">R</b>chile<span class="fragment">. Uso R</span><span class="fragment">, respiro R</span><span class="fragment">, ~~como~~ vivo R</span>
+- Hoy quiero ser vuestro motivador<i class="fa fa-exclamation" style="color: darkgreen"></i><i class="fa fa-exclamation" style="color: darkgreen"></i>
 
-# <img class = "imgnone" src="https://www.r-project.org/logo/Rlogo.png"/> { .center data-background="#FAFAFA" }
+# ¿Por qué? <br> Elementos del <span class="emp">Data</span> Science<br>en R { .left .center .white data-background="#e51c23" }
 
-## Mi <i class="fab fa-r-project" style="color: #2569BD"></i>elación con R
+## <b></b> { .center data-background="imgs/data-culture.jpg"}
+
+## Datos. Cada día..
+
+- Se generan más
+- Vienen de distintas partes
+- Se complejizan
+- Hay que obtener __conocimiento__ de ellos
+
+## Debemos Prepararnos { .left .white data-background="imgs/rocky.gif" }
+
+# ¿Por qué? <br> <span class="emp">Elementos</span> del Data Science<br>en R { .left .center .white data-background="#4CAF50" }
+
+## Todos comenzamos<br>desde cierto punto { .left .center .white data-background="imgs/karatekid.gif" }
+
+## Los Elementos
+
+![elementos](imgs/r4ds_data-science.png)
+
+asda
+
+## AED
+
+Some interesting text
+
+# ¿Por qué? <br> Elementos del Data Science<br><span class="emp">en R</span> { .left .center .white data-background="#2569BD" }
+
+## <b></b> { .center data-background="imgs/Rlogo.png"}
+
+## Por que R/leguaje de programación/código
+
+- Flexible. Más poderoso
+- Fácil de automatizar, y organizar
+- Reproductibilidad. Ayuda a detectar errores
+- Gratis, codigo abierto
+- R. Tiene una privilegiada comunidad orientada a la enseñanza integración (Rladies)
+- R. Fuerte en visualización
+
+# A mover<br>esos dedos{ .right .center .white data-background="imgs/hacker.gif" }
 
 
-- Cofundador del meetup useRchile (2013!)
-- De _cauro_ chico me lo enselaron
-- Uso R<span class="fragment">, respiro R</span><span class="fragment">, ~~como~~ vivo R</span>
