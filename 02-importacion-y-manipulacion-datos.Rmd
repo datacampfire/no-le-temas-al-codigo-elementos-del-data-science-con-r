@@ -1,0 +1,163 @@
+---
+title: '<br>Elementos del Data Science con R<br><br>Importación y Manipulación de Datos'
+pagetitle: 'Elementos del Data Science con R - Importación y Manipulación de Datos'
+author: false
+output:
+  revealjs::revealjs_presentation:
+    lib_dir: libs
+    self_contained: false
+    reveal_plugins: ["zoom"]
+    mathjax: null
+    transition: fade
+    css: ["css/styles.css"]
+    incremental: true
+    center: false
+    # center: true
+    theme: simple
+    fig_width: 6
+    fig_height: 3.5
+    reveal_options:
+      slideNumber: false
+      controls: false
+      mouseWheel: false
+editor_options: 
+  chunk_output_type: console
+---
+
+# Importacion y Manejor de Datos { .center .white data-background="#75AADB" }
+
+```{r, include = FALSE}
+source("R/setup.R")
+knitr::opts_chunk$set(
+  fig.path = "img/02-importacion-y-manipulacion-datos/",
+  echo = TRUE,
+  fig.width = 10,
+  fig.height = 6
+  )
+```
+
+# Importación { .center .white data-background="#75AADB" }
+
+## Ejemplo
+
+```{r}
+library(tidyverse)
+storms <- read_csv("data/storms.csv")
+storms
+```
+
+----
+
+```{r}
+pollution <- read_csv("data/pollution.csv")
+pollution
+```
+
+
+# Manejo de Datos { .center .white data-background="#75AADB" }
+
+## `filter` Seleeccionar Filas
+
+![](img/dplyr/filter.png)
+
+## `filter` Ejemplo 
+
+![](img/dplyr/filter_example.png)
+
+## `filter` Código
+
+```{r}
+filter(storms, storm %in% c("Alberto", "Ana"))
+
+storms %>% 
+  filter(storm %in% c("Alberto", "Ana"))
+```
+
+## `select` Seleccionar Columnas
+
+![](img/dplyr/select.png)
+
+## `select` Ejemplo 
+
+![](img/dplyr/select_example.png)
+
+## `select` Código
+
+```{r}
+select(storms, storm, pressure)
+
+storms %>% 
+  select(storm, pressure)
+```
+
+## `arrange` Ordenar Filas
+
+![](img/dplyr/arrange.png)
+
+## `arrange` Ejemplo 
+
+![](img/dplyr/arrange_example.png)
+
+## `arrange` Código
+
+```{r}
+arrange(storms, wind)
+
+storms %>% 
+  arrange(wind)
+```
+
+## `mutate` Crear/Modificar columnas
+
+![](img/dplyr/mutate.png)
+
+## `mutate` Ejemplo 
+
+![](img/dplyr/mutate_example.png)
+
+## `mutate` Código
+
+```{r}
+mutate(storms, ratio = pressure/wind, inverse = 1/ratio)
+
+storms %>% 
+  mutate(ratio = pressure/wind, inverse = 1/ratio)
+```
+
+## `summarize` Resumir Columnas
+
+![](img/dplyr/summarize.png)
+
+## `summarize` Ejemplo 
+
+![](img/dplyr/summarize_example.png)
+
+## `summarise` Código
+
+```{r}
+summarise(pollution, median = median(amount))
+
+pollution %>% 
+  summarise(median = median(amount))
+```
+
+## `group_by` + `summarize` Resumir Columnas por Grupos
+
+![](img/dplyr/group_by_summarize.png)
+
+## `group_by` + `summarize` Ejemplo 
+
+![](img/dplyr/group_by_summarize_example.png)
+
+## `group_by` + `summarise` Código
+
+```{r}
+pollution %>%
+  group_by(city) %>% 
+  summarise(
+    promedio = median(amount),
+    suma = sum(amount),
+    n = n()
+    )
+```
+
