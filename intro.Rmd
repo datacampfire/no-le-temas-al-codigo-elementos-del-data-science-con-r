@@ -30,6 +30,12 @@ editor_options:
 
 ```{r, include = FALSE}
 source("R/setup.R")
+knitr::opts_chunk$set(
+  fig.path = "img/intro/",
+  echo = FALSE,
+  fig.width = 10,
+  fig.height = 6
+  )
 ```
  
 # <span style="font-family: 'Creepster'; font-size: 1.5em">No le temas<br>

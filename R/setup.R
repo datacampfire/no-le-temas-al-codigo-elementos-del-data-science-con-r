@@ -39,8 +39,5 @@ knitr::opts_chunk$set(
   echo = FALSE,
   dev = "svg",
   cache = FALSE,
-  cache.path = ".cache/",
-  fig.path = "imgs/",
-  fig.height = 7,
-  fig.width = 12
+  cache.path = ".cache/"
 )
