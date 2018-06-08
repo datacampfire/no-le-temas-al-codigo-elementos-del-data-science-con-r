@@ -1,0 +1,113 @@
+---
+title: '<br>Elementos del Data Science con R<br><br>R + Rstudio'
+pagetitle: 'Elementos del Data Science con R - R + Rstudio'
+author: false
+output:
+  revealjs::revealjs_presentation:
+    lib_dir: libs
+    self_contained: false
+    reveal_plugins: ["zoom"]
+    mathjax: null
+    transition: fade
+    css: ["css/styles.css"]
+    incremental: true
+    center: false
+    # center: true
+    theme: simple
+    fig_width: 6
+    fig_height: 3.5
+    reveal_options:
+      slideNumber: false
+      controls: false
+      mouseWheel: false
+editor_options: 
+  chunk_output_type: console
+---
+
+# R + RStudio { .center .white data-background="#75AADB" }
+
+```{r, include = FALSE}
+source("R/setup.R")
+knitr::opts_chunk$set(
+  fig.path = "img/01-r-rstudio/",
+  echo = FALSE,
+  fig.width = 10,
+  fig.height = 6
+  )
+```
+
+## R + RStudio ¿Qué? ¿Por qué?
+
+¿Qué?
+
+- R es un entorno y lenguaje de programación
+- RStudio es una (IDE) _máscara_ para facilitar el uso y la organización al
+usar R
+
+ ¿Por qué?
+ 
+ - Por que es un lenguaje que nació desde la estadística por lo que es orientado 
+ a los datos. Tiene una comunidad activa, amigable, que intenta ir a la vanguardia
+
+## Descarga e Instalación
+
+Instalación de R es tan fácil como:
+
+http://es.lmgtfy.com/?q=r+cran+descargar
+
+De la misma forma RStudio:
+
+http://es.lmgtfy.com/?q=rstudio+descargar
+
+La instalación es estándar (click click click).
+
+## A instalar! { .center }
+
+## Usar R + Rstudio
+
+Simplemente abrimos RStudio que internamente usará R
+
+<img src="img/rstudio.png" alt="Rstudio" width="60%">
+
+<small>http://edild.github.io/qetxrbook/rintro/rstudio.html</small>
+
+## Los primeros pasos
+
+- La mayor parte será en un __script__ que contendrá nuestros comandos
+- Los resultados de nuestras instrucciones aparecerán en la __consola__
+- Si realizamos gráficos estos aparecerán en __plots__
+- Los datos que vayamos cargando, creando, modificando aparecenrán en
+__enviorment__ (ambiente)
+
+## Ejercicio - El segundo paso
+
+- Abrir RStudio
+- File (archivo) -> New File (nuevo archivo) -> R Script
+- Escribir en el script `x <- c(12, 45, 67,45, 234, 45)` y ejecutar (`CTRL + R`)
+- Escribir y ejectutar `mean(x)` y `plot(x)`
+
+---- 
+
+```{r, echo=TRUE, fig.height=3, fig.width=6}
+x <- c(12, 45, 67,45, 234, 45)
+mean(x)
+plot(x)
+```
+
+## Projectos en RStudio
+
+- Es un espacio de trabajo asociado a una carpeta
+- Nuestros datos y escript estarán todos haciendo referencia 
+
+## Detalles
+
+Podemos seguir detalles en este tutorial de Riva, otra _Firestarter_:
+
+https://github.com/rivaquiroga/RLadies-Santiago/blob/master/2018-04_taller_primeros_pasos_en_R.Rmd
+
+
+
+
+
+
+

@@ -187,7 +187,11 @@ Rladies por ejemplo
 
 # A mover<br>esos dedos{ .right .center .white data-background="imgs/hacker.gif" }
 
-## Pero antes, jerga
+## Estructura
 
-![jerga](imgs/tidy-1.png)
+- R + Rstudio: Instalación, paquetes.
+- Importación y Manipulación Datos: Paquete `tidyverse`. Ejercicios
+- Manipulación de Datos II y Exportación Datos
+- Visualización
+- Reportería
 
