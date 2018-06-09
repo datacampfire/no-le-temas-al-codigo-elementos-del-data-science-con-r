@@ -24,7 +24,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-# Importacion y Manejor de Datos { .center .white data-background="#75AADB" }
+# Importacion y Manipulación de Datos { .center .white data-background="#75AADB" }
 
 ```{r, include = FALSE}
 source("R/setup.R")
@@ -61,6 +61,11 @@ __paquete__ en particular
 
 ## Detalles en `read_csv` y `read_delim`
 
+<img src="img/readr/readr.png" width="60%">
+
+## Parámetros
+
+<img src="img/readr/readr-pars.png" width="60%">
 
 ## Ejemplo
 
