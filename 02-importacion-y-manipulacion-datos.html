@@ -490,8 +490,37 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </section>
 
 <section><section id="importacion-y-manejor-de-datos" class="titleslide slide level1 center white" data-background="#75AADB"><h1>Importacion y Manejor de Datos</h1></section></section>
-<section><section id="importacion" class="titleslide slide level1 center white" data-background="#75AADB"><h1>Importación</h1></section><section id="ejemplo" class="slide level2">
+<section><section id="importacion" class="titleslide slide level1 center white" data-background="#75AADB"><h1>Importación</h1></section><section id="origenes" class="slide level2">
+<h2>Orígenes</h2>
+<p>Los datos puden venir de <em>muuuuchas</em> fuentes</p>
+<ul>
+<li class="fragment">Archivo de texto</li>
+<li class="fragment">Excel</li>
+<li class="fragment">SPSS</li>
+<li class="fragment">Bases de Datos</li>
+<li class="fragment">Desde una página web</li>
+<li class="fragment">Una API</li>
+</ul>
+</section><section id="funciones-para-importar" class="slide level2">
+<h2>Funciones para importar</h2>
+<p>Dependiendo de la fuente se requiere uan <strong>función</strong> de un <strong>paquete</strong> en particular</p>
+<ul>
+<li class="fragment">Si es archivo de texto csv: <code>read_csv</code> del paquete <code>readr</code> (que viene en el <code>tidyverse</code>)</li>
+<li class="fragment">Si es un archivo de texto: <code>read_delim</code> del paquete <code>readr</code> es una función más general</li>
+<li class="fragment">Si es un excel: <code>read_excel</code> del paquete <code>readxl</code></li>
+<li class="fragment">Y así…</li>
+</ul>
+</section><section id="detalles-en-read_csv-y-read_delim" class="slide level2">
+<h2>Detalles en <code>read_csv</code> y <code>read_delim</code></h2>
+</section><section id="ejemplo" class="slide level2">
 <h2>Ejemplo</h2>
+<pre><code>## &quot;storm&quot;,&quot;wind&quot;,&quot;pressure&quot;,&quot;date&quot;
+## &quot;Alberto&quot;,110,1007,2000-08-03
+## &quot;Alex&quot;,45,1009,1998-07-27
+## &quot;Allison&quot;,65,1005,1995-06-03
+## &quot;Ana&quot;,40,1013,1997-06-30
+## &quot;Arlene&quot;,50,1010,1999-06-11
+## &quot;Arthur&quot;,45,1010,1996-06-17</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(tidyverse)
 storms &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;data/storms.csv&quot;</span>)
 storms</code></pre></div>
@@ -667,6 +696,7 @@ pollution</code></pre></div>
 ## 2 London       19      38     2
 ## 3 New York     18.5    37     2</code></pre>
 </section></section>
+<section><section id="ejercicio-practico" class="titleslide slide level1 center"><h1>Ejercicio Práctico</h1></section></section>
     </div>
   </div>
 

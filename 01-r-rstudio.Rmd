@@ -94,6 +94,18 @@ mean(x)
 plot(x)
 ```
 
+## Tercer paso - Paquetes
+
+- Paquetes son conjunto de funciones que extienden la funcionalidad de R
+- Para poder usarlas debemos antes instalarlas mediante la función `install.package`. Ejemplo/Ejercicio
+`install.package("tidyverse")`
+- Luego ya instalada, __no siempre__ la necesitaré. En caso de necesitarla, la cargo para usarla 
+en nuestra sesión con la función `library`. Ejemplo/Ejercicio `library(readxl)`
+
+Resumen. En un computador debemos instalar __una__ vez el paquete, y cargar el paquete las veces
+que los requiramos.
+
+
 ## Projectos en RStudio
 
 - Es un espacio de trabajo asociado a una carpeta

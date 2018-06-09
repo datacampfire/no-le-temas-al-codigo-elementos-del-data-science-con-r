@@ -38,6 +38,30 @@ knitr::opts_chunk$set(
 
 # Importación { .center .white data-background="#75AADB" }
 
+## Orígenes
+
+Los datos puden venir de _muuuuchas_ fuentes
+
+- Archivo de texto
+- Excel
+- SPSS
+- Bases de Datos
+- Desde una página web
+- Una API
+
+## Funciones para importar
+
+Dependiendo de la fuente se requiere uan __función__ de un
+__paquete__ en particular
+
+- Si es archivo de texto csv: `read_csv` del paquete `readr` (que viene en el `tidyverse`)
+- Si es un archivo de texto:  `read_delim` del paquete `readr` es una función más general
+- Si es un excel: `read_excel` del paquete `readxl`
+- Y así...
+
+## Detalles en `read_csv` y `read_delim`
+
+
 ## Ejemplo
 
 ```{r}
@@ -160,4 +184,6 @@ pollution %>%
     n = n()
     )
 ```
+
+# Ejercicio Práctico { .center }
 
