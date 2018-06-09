@@ -1,0 +1,27 @@
+---
+title: "R material"
+output:
+  html_document:
+    theme: paper
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(htmltools)
+library(purrr)
+library(stringr)
+
+files <- dir(".", recursive = FALSE, pattern = "html", full.names = TRUE)
+files <- setdiff(files, "./index.html")
+```
+
+```{r, results='asis', echo=FALSE}
+files %>% 
+  map(str_replace, "./", "") %>% 
+  map(str_replace_all, "-", " ") %>% 
+  map(str_to_title) %>% 
+  map2(files, function(x, y) tags$a(x, href = y)) %>% 
+  map(tags$li) %>% 
+  tags$ul()
+```
+
