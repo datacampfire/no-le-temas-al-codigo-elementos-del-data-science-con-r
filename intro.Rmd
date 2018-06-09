@@ -41,7 +41,7 @@ knitr::opts_chunk$set(
 # <span style="font-family: 'Creepster'; font-size: 1.5em">No le temas<br>
 <span class="fragment" style="color: red">al código</span></span><br><span style= "font-family: 'Amatic SC', cursive;" class="fragment">Elementos del Data Science con R</span> { .white data-transition-speed="slow" data-transition="fade-in fade-out" .center data-background="#4D0000"}
 
-# ¡Holi! { .left data-background="imgs/hello.gif" }
+# ¡Holi! { .left data-background="img/hello.gif" }
 
 ## Me presento
 
@@ -50,11 +50,11 @@ knitr::opts_chunk$set(
 - Cofundador del meetup use<b style="color:#2569BD">R</b>chile<span class="fragment">. Uso R</span><span class="fragment">, respiro R</span><span class="fragment">, ~~como~~ vivo R</span>
 - Hoy quiero ser vuestro motivador<i class="fa fa-exclamation" style="color: darkgreen"></i><i class="fa fa-exclamation" style="color: darkgreen"></i>
 
-## <b></b> { .left data-background="imgs/yay.gif" }
+## <b></b> { .left data-background="img/yay.gif" }
 
 # ¿Por qué? <br> Elementos del <span class="emp">Data</span> Science<br>en R { .left .center .white data-background="#e51c23" }
 
-## <b></b> { .center data-background="imgs/data-culture.jpg"}
+## <b></b> { .center data-background="img/data-culture.jpg"}
 
 ## Datos. Cada día..
 
@@ -64,17 +64,17 @@ knitr::opts_chunk$set(
 - Hay que obtener __conocimiento__ de ellos
 - Se toman __decisiones__
 
-## Debemos Prepararnos { .left .white data-background="imgs/rocky.gif" }
+## Debemos Prepararnos { .left .white data-background="img/rocky.gif" }
 
 # ¿Por qué? <br> <span class="emp">Elementos</span> del Data Science<br>en R { .left .center .white data-background="#4CAF50" }
 
-## Todos comenzamos<br>desde cierto punto { .left .center .white data-background="imgs/karatekid.gif" }
+## Todos comenzamos<br>desde cierto punto { .left .center .white data-background="img/karatekid.gif" }
 
 ## Elementos
 
-![elementos](imgs/r4ds_data-science.png)
+![elementos](img/r4ds_data-science.png)
 
-## Import & Tidy { .left .white data-background="imgs/import.jpg" }
+## Import & Tidy { .left .white data-background="img/import.jpg" }
 
 --- 
 
@@ -84,7 +84,7 @@ Debemos tener la capacidad
 - Limpiarlos ,estandarizarlos
 - Organizarlos, ordenarlos
 
-## Analisis Exploratios de Datos { .white data-background="imgs/net.png" }
+## Analisis Exploratios de Datos { .white data-background="img/net.png" }
 
 --- 
 
@@ -96,7 +96,7 @@ es parte clave en el proceso de aprendizaje</span>
 - Estadística Descriptiva
 - Modelar<span class="fragment">. Machine learning. En un próximo paso</span>
 
-## Comunicar { .left data-background="imgs/data-visualization-tools-concept.png" }
+## Comunicar { .left data-background="img/data-visualization-tools-concept.png" }
 
 --- 
 
@@ -171,9 +171,9 @@ gridExtra::grid.arrange(
   nrow = 1)
 ```
 
-# ¿Por qué? <br> Elementos del Data Science<br><span class="emp">en R</span> { .left .center .white data-background="#2569BD" }
+# ¿Por qué? <br> Elementos del Data Science<br><span imgclass="emp">en R</span> { .left .center .white data-background="#2569BD" }
 
-## <b></b> { .center data-background="imgs/Rlogo.png"}
+## <b></b> { .center data-background="img/Rlogo.png"}
 
 ## Por que R/leguaje de programación/código
 
@@ -185,7 +185,7 @@ gridExtra::grid.arrange(
 Rladies por ejemplo
 - R. Fuerte en visualización
 
-# A mover<br>esos dedos{ .right .center .white data-background="imgs/hacker.gif" }
+# A mover<br>esos dedos{ .right .center .white data-background="img/hacker.gif" }
 
 ## Estructura
 
